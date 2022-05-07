@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for objects in object_list %}
+        {{ objects.title }}
+        {{ objects.body|safe}}
+
+    {% endfor %}
+{% endblock %}
